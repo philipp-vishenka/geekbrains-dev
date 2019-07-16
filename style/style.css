@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -247,8 +252,13 @@ body {
 }
 
 .category-item {
-    padding-bottom: 20px;
+    display: flex;
+    margin-bottom: 20px;
     position: relative;
+}
+
+.category-item:hover {
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
 }
 
 .category-item-name {
