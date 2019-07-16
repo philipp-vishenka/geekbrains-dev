@@ -5,29 +5,31 @@
     <title>Title</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/da7c272127.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container header-container">
             <div class="header-left">
                 <a class="logo" href="#">
-                    <img src="img/logo.png" alt="logo">Brand
+                    <img src="img/logo.png" alt="logo">
+                    <h2>Bran<span>d</span></h2>
                 </a>
-                <div>Browse</div>
-                <form action="#">
-                    <input type="text">
-                    <button type="submit">0</button>
+                <a class="header-browse" href="#">Browse<i class="fas fa-caret-down"></i></a>
+                <form class="header-search-form" action="#">
+                    <input class="header-search-input" type="text" placeholder="Search for Item...">
+                    <button class="header-search-button" type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
             <div class="header-right">
-                <img src="img/cart.png" alt="cart">
-                <a href="#">My Account</a>
+                <a class="header-cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a class="header-myAccount" href="#">My Account<i class="fas fa-caret-down"></i></a>
             </div>
         </div>
     </header>
     <nav class="nav">
         <div class="container">
-            <ul class="menu style-reset">
+            <ul class="menu">
                 <li><a class="menu-active" href="#">Home</a></li>
                 <li><a href="#">Man</a></li>
                 <li><a href="#">Women</a></li>
@@ -41,8 +43,81 @@
     <div class="slider">
         <div class="container slider-container">
             <div class="slider-text">
-                <h2 class="style-reset">The brand</h2>
-                <h3 class="style-reset">Of luxerious <span>fashion</span></h3>
+                <h2>The brand</h2>
+                <h3>Of luxerious <span>fashion</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="category">
+        <div class="container content-category">
+            <div class="content-category-left">
+                <a href="#">
+                    <img src="img/product-1.jpg" alt="category-1">
+                </a>
+                <a href="#">
+                    <img src="img/product-2.jpg" alt="category-2">
+                </a>
+            </div>
+            <div class="content-category-right">
+                <a href="#">
+                    <img src="img/product-3.jpg" alt="category-1">
+                </a>
+                <a href="#">
+                    <img src="img/product-4.jpg" alt="category-2">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="feature-item">
+        <div class="container content-feature-item">
+            <div class="feature-item-header">
+                <h2>Fetured Items</h2>
+                <h3>Shop for items based on what we featured in this week</h3>
+            </div>
+            <div class="feature-item-main">
+                <div class="feature-item-element">
+                    <img src="img/featured-item-1.jpg" alt="element-1">
+                    <h2>Mango  People  T-shirt</h2>
+                    <h3>$52.00</h3>
+                </div>
+                <div class="feature-item-element">
+                    <img src="img/featured-item-2.jpg" alt="element-1">
+                    <h2>Mango  People  T-shirt</h2>
+                    <h3>$52.00</h3>
+                </div>
+                <div class="feature-item-element">
+                    <img src="img/featured-item-3.jpg" alt="element-1">
+                    <h2>Mango  People  T-shirt</h2>
+                    <h3>$52.00</h3>
+                </div>
+                <div class="feature-item-element">
+                    <img src="img/featured-item-4.jpg" alt="element-1">
+                    <h2>Mango  People  T-shirt</h2>
+                    <h3>$52.00</h3>
+                </div>
+                <div class="feature-item-element">
+                    <img src="img/featured-item-5.jpg" alt="element-1">
+                    <h2>Mango  People  T-shirt</h2>
+                    <h3>$52.00</h3>
+                </div>
+                <div class="feature-item-element">
+                    <img src="img/featured-item-6.jpg" alt="element-1">
+                    <h2>Mango  People  T-shirt</h2>
+                    <h3>$52.00</h3>
+                </div>
+                <div class="feature-item-element">
+                    <img src="img/featured-item-7.jpg" alt="element-1">
+                    <h2>Mango  People  T-shirt</h2>
+                    <h3>$52.00</h3>
+                </div>
+                <div class="feature-item-element">
+                    <img src="img/featured-item-8.jpg" alt="element-1">
+                    <h2>Mango  People  T-shirt</h2>
+                    <h3>$52.00</h3>
+                </div>
+            </div>
+            <div class="feature-item-footer">
+                <a href="#">Browse All Product</a>
             </div>
         </div>
     </div>
