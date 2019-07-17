@@ -128,7 +128,7 @@ body {
 }
 
 .header-cart i:hover {
-    color: #f16d7f;
+    color: #a4a4a4;
 }
 
 .header-cart i {
@@ -148,7 +148,7 @@ body {
 }
 
 .header-myAccount:hover {
-    background-color: #222222;
+    background-color: #a4a4a4;
 }
 
 .header-myAccount i{
@@ -363,6 +363,9 @@ body {
     text-decoration: none;
     padding: 14px 0 14px 24px;
     background-color: #f16d7f;
+}
+.browse-featured-product:hover {
+    background-color: #a4a4a4;
 }
 .browse-featured-product i {
     padding-left: 9px;
