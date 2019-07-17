@@ -349,3 +349,24 @@ body {
     font-size: 16px;
     font-weight: 700;
 }
+
+.bottom-featured-product {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.browse-featured-product {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 14px 0 14px 24px;
+    background-color: #f16d7f;
+}
+.browse-featured-product i {
+    padding-left: 9px;
+    padding-right: 19px;
+    color: #ffffff;
+    font-size: 15px;
+}
