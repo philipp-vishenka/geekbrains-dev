@@ -569,6 +569,7 @@ body {
 }
 .slider-sub-right .subscribe {
     padding-top: 30px;
+    display: flex;
 }
 .sub-email {
     width: 282px;
