@@ -503,3 +503,109 @@ body {
     line-height: 24px;
     letter-spacing: 0.34px;
 }
+
+/*Container Slider-Subscribe*/
+.slider-sub {
+    background: url("../img/slider-subscribe.jpg") space center;
+
+}
+.container-slider-sub {
+    display: flex;
+    height: 438px;
+}
+.slider-sub-left {
+    width: 569.5px;
+    border-right: 0.5px solid #fff;
+    padding: 123px 74px 123px 112px;
+    position: relative;
+    box-sizing: border-box;
+}
+.personal-img {
+    position: absolute;
+    left: 1px;
+}
+.slider-personal-comment {
+    color: #222224;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+}
+.slider-personal-name {
+    color: #f16d7f;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+}
+.slider-personal-title {
+    color: #222224;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height: 14px;
+}
+.slider-sub-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 569.5px;
+    border-left: 0.5px solid #fff;
+}
+.slider-sub-right h2 {
+    color: #222224;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+.slider-sub-right h3 {
+    /* Style for "Subscribe" */
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+}
+.slider-sub-right .subscribe {
+    padding-top: 30px;
+}
+.sub-email {
+    width: 282px;
+    height: 46px;
+    border: none;
+    border-radius: 23px 0 0 23px;
+    background-color: #e1e1e1;
+    opacity: 0.67;
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    padding: 0 28px;
+    box-sizing: border-box;
+}
+.sub-email:hover {
+    background-color: #cdcdcd;
+}
+.sub-email:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+.sub-but {
+    width: 104px;
+    height: 46px;
+    border: none;
+    border-radius: 0 23px 23px 0;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+.sub-but:hover {
+    background-color: #f15665;
+}
+.sub-but:focus {
+    outline: none;
+    background-color: #9ae58f;
+}
