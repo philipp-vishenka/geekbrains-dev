@@ -367,7 +367,7 @@ body {
     border: 1px solid #ffffff;
 }
 .cart-link:hover {
-    border: 1px solid #f16d7f;
+    background-color: rgba(255, 255, 255, 0.16);
 }
 .cart-link i {
     width: 23px;
@@ -506,7 +506,7 @@ body {
 
 /*Container Slider-Subscribe*/
 .slider-sub {
-    background: url("../img/slider-subscribe.jpg") space center;
+    background: url("../img/slider-subscribe.jpg") no-repeat center;
 
 }
 .container-slider-sub {
