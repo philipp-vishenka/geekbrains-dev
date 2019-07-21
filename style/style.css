@@ -9,6 +9,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/*Header-Site*/
+
 .header {
     border-style: solid;
     border-width: 1px;
@@ -158,13 +160,15 @@ body {
     font-size: 14px;
 }
 
+
+/*NAV - menu*/
 .menu {
     display: flex;
     list-style-type: none;
     justify-content: center;
 }
 
-.menu a {
+.menu > li > a {
     display: block;
     padding: 19px;
     color: #222222;
@@ -174,14 +178,70 @@ body {
     text-align: left;
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
 }
 
-.menu a:hover {
+.menu > li > a:hover {
     border-bottom: 3px solid #ef5b70;
 }
-
+.menu > li:hover .container-mega-menu {
+    display: flex;
+}
 .menu-active {
     border-bottom: 3px solid #ef5b70;
+}
+
+
+/*NAV - meega-menu*/
+.mega-menu-triangle {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    position: absolute;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    transform: rotate(45deg);
+    top: -9px;
+    left: 38px;
+}
+.container-mega-menu {
+    position: absolute;
+    top: 160px;
+    display: none;
+    padding: 20px 25px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+}
+.mega-menu {
+    margin-right: 46px;
+}
+.mega-menu:last-child {
+    margin-right: 0;
+}
+.mega-menu h4 {
+    width: 235px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 10px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+}
+.mega-menu ul {
+    list-style: none;
+}
+.mega-menu a {
+    text-decoration: none;
+    color: #646464;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+}
+.mega-menu a:hover {
+    color: #222222;
 }
 
 
@@ -686,7 +746,6 @@ body {
     margin-left: 8px;
     text-align: center;
     width: 32px;
-    height: 32px;
     background-color: #ffffff;
     display: block;
     text-decoration: none;
@@ -694,11 +753,11 @@ body {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.4px;
+    line-height: 32px;
 }
 .resource-right a:hover {
     background-color: #f16d7f;
     color: #fff;
 }
 .resource-right a i {
-    padding-top: 8px;
 }
