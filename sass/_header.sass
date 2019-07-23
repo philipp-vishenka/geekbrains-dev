@@ -1,0 +1,259 @@
+//Header site
+.header
+  border: 1px solid #ececec
+  box-sizing: border-box
+  background-color: #ffffff
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17)
+  height: 100px
+
+.header-container
+  display: flex
+  height: 100%
+  justify-content: space-between
+  align-items: center
+
+.header-left
+  display: flex
+  align-items: center
+
+.logo
+  display: flex
+  align-items: center
+  text-decoration: none
+  margin-right: 39px
+  h2
+    @include text(27px, 300, #222222)
+    text-transform: uppercase
+    padding-left: 13px
+  span
+    @include text (27px, 900, #f16d7f)
+    text-transform: uppercase
+
+//Header Browse
+.header-browse
+  position: relative
+  &:hover .container-menu-browse
+    display: flex
+  > a
+    @include text(14px, 300, #222222)
+    line-height: 16px
+    padding: 10px 0 10px 14px
+    display: block
+    background-color: #f5f5f5
+    text-decoration: none
+    border: 1px solid #cdcdcc
+    &:hover
+      background-color: #ebebeb
+    > i
+      @include icons(14px, #838383)
+      padding-left: 8px
+      padding-right: 8px
+
+.container-menu-browse
+  z-index: 1
+  position: absolute
+  top: 35px
+  display: none
+  flex-direction: column
+  padding: 10px 15px
+  border: 1px solid #e8e8e8
+  background-color: #fff
+
+.menu-browse-triangle
+  width: 7px
+  height: 7px
+  background-color: #fff
+  position: absolute
+  border-top: 1px solid #e8e8e8
+  border-left: 1px solid #e8e8e8
+  transform: rotate(45deg)
+  top: -5px
+  left: 67px
+
+.menu-browse-box
+  h4
+    @include text(14px, 400, #232323)
+    width: 235px
+    border-bottom: 1px solid #e8e8e8
+    margin-bottom: 10px
+    line-height: 32px
+    text-transform: uppercase
+    letter-spacing: 0.35px
+  ul
+    list-style: none
+  a
+    padding-left: 10px
+    text-decoration: none
+    color: #4f4f4f
+    font-size: 14px
+    font-weight: 400
+    line-height: 28px
+    letter-spacing: 0.35px
+    &:hover
+      color: #222222
+
+//-------
+.header-search-form
+  display: flex
+  align-items: center
+
+.header-search-input
+  height: 36px
+  width: 315px
+  background-color: #ffffff
+  border-top: 1px solid #cdcdcc
+  border-right: none
+  border-bottom: 1px solid #cdcdcc
+  border-left: none
+  color: #a4a4a4
+  font-size: 14px
+  font-weight: 300
+  line-height: 32px
+  padding: 0 16px
+  &:focus
+    outline: none
+
+.header-search-button
+  height: 38px
+  width: 38px
+  border: 1px solid #cdcdcc
+  background-color: #ffffff
+  color: #a4a4a4
+  font-size: 14px
+  &:hover
+    border: 1px solid #838383
+    color: #838383
+  &:focus
+    outline: 0
+
+//Header Right
+.header-right
+  display: flex
+  align-items: center
+
+//CART
+.header-cart
+  position: relative
+  > a
+    color: #222222
+    font-size: 32px
+    padding-right: 26px
+  &:hover
+    color: #a4a4a4
+    .container-menu-cart
+      display: flex
+
+.cart-triangle
+  width: 7px
+  height: 7px
+  background-color: #fff
+  position: absolute
+  border-top: 1px solid #e8e8e8
+  border-left: 1px solid #e8e8e8
+  transform: rotate(45deg)
+  top: -5px
+  left: 119px
+
+.container-menu-cart
+  padding: 20px 15px
+  position: absolute
+  z-index: 1
+  display: none
+  flex-direction: column
+  border: 1px solid #e8e8e8
+  background-color: #fff
+  width: 262px
+  border-radius: 5px
+  top: 40px
+  left: -103px
+  align-items: center
+  box-sizing: border-box
+
+.cart-product
+  border-bottom: 1px solid #ededed
+  width: 100%
+  justify-content: space-between
+  display: flex
+  height: 120px
+  align-items: center
+
+.cart-product-center
+  padding-top: 36px
+  margin-left: 14px
+  width: 100%
+  height: 100%
+  h4
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    padding-bottom: 5px
+  > span
+    padding-top: 5px
+    display: block
+    color: #f16d7f
+    font-weight: 400
+    text-transform: uppercase
+    font-size: 12px
+
+.cart-product-right button
+  border: none
+  background: none
+  color: #c0c0c0
+  font-size: 16px
+  font-weight: 400
+  &:hover
+    cursor: pointer
+    color: #f16d7f
+  &:focus
+    outline: none
+
+.cart-but
+  padding-top: 32px
+  padding-bottom: 11px
+  &:last-child
+    padding-top: 0
+    padding-bottom: 0
+  a
+    text-align: center
+    text-decoration: none
+    display: block
+    width: 225px
+    height: 50px
+    border: 1px solid #eaeaea
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 50px
+    &:hover
+      border: 1px solid #f16d7f
+      color: #f16d7f
+
+.cart-info
+  padding-top: 20px
+  display: flex
+  justify-content: space-between
+  width: 100%
+  p, span
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+
+//--------------
+.header-myAccount
+  display: block
+  padding: 11px 0 11px 19px
+  background-color: #f16d7f
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  text-decoration: none
+  &:hover
+    background-color: #a4a4a4
+  i
+    padding-left: 8px
+    padding-right: 12px
+    color: #ffffff
+    font-size: 14px

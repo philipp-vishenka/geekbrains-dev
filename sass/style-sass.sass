@@ -1,341 +1,43 @@
+@import "reset"
+@import "vars"
+@import "mixins"
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900&display=swap')
-
-*
-  margin: 0
-  padding: 0
 
 body
   font-family: 'Lato', sans-serif
 
-/*Header-Site*/
-.header
-  border-style: solid
-  border-width: 1px
-  border-color: #ececec
-  box-sizing: border-box
-  background-color: #ffffff
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17)
-  height: 100px
-
 .container
-  width: 1140px
+  width: $width-site
   margin: 0 auto
 
-.header-container
-  display: flex
-  height: 100%
-  justify-content: space-between
-  align-items: center
+@import "header"
 
-.header-left
-  display: flex
-  align-items: center
-
-.logo
-  display: flex
-  align-items: center
-  text-decoration: none
-  margin-right: 39px
-
-.logo h2
-  font-size: 27px
-  line-height: 32px
-  color: #222222
-  font-weight: 300
-  text-transform: uppercase
-  padding-left: 13px
-
-.logo h2 span
-  font-size: 27px
-  color: #f16d7f
-  font-weight: 900
-
-/*Header Browse*/
-.header-browse
-  position: relative
-
-.header-browse > a
-  line-height: 16px
-  padding: 10px 0 10px 14px
-  display: block
-  background-color: #f5f5f5
-  color: #222222
-  font-size: 14px
-  font-weight: 300
-  text-decoration: none
-  border: 1px solid #cdcdcc
-
-.header-browse > a:hover
-  background-color: #ebebeb
-
-.header-browse:hover .container-menu-browse
-  display: flex
-
-.header-browse > a > i
-  padding-left: 8px
-  padding-right: 8px
-  color: #838383
-  font-size: 14px
-
-.container-menu-browse
-  z-index: 1
-  position: absolute
-  top: 35px
-  display: none
-  flex-direction: column
-  padding: 10px 15px
-  border: 1px solid #e8e8e8
-  background-color: #fff
-
-.menu-browse-triangle
-  width: 7px
-  height: 7px
-  background-color: #fff
-  position: absolute
-  border-top: 1px solid #e8e8e8
-  border-left: 1px solid #e8e8e8
-  transform: rotate(45deg)
-  top: -5px
-  left: 67px
-
-.menu-browse-box h4
-  width: 235px
-  border-bottom: 1px solid #e8e8e8
-  margin-bottom: 10px
-  color: #232323
-  font-size: 14px
-  font-weight: 400
-  line-height: 32px
-  text-transform: uppercase
-  letter-spacing: 0.35px
-
-.menu-browse-box ul
-  list-style: none
-
-.menu-browse-box a
-  padding-left: 10px
-  text-decoration: none
-  color: #4f4f4f
-  font-size: 14px
-  font-weight: 400
-  line-height: 28px
-  letter-spacing: 0.35px
-
-.menu-browse-box a:hover
-  color: #222222
-
-/*-------*/
-.header-search-form
-  display: flex
-  align-items: center
-
-.header-search-input
-  height: 36px
-  width: 315px
-  background-color: #ffffff
-  border-top: 1px solid #cdcdcc
-  border-right: none
-  border-bottom: 1px solid #cdcdcc
-  border-left: none
-  color: #a4a4a4
-  font-size: 14px
-  font-weight: 300
-  line-height: 32px
-  padding: 0 16px
-
-.header-search-input:focus
-  outline: none
-
-.header-search-button
-  height: 38px
-  width: 38px
-  border: 1px solid #cdcdcc
-  background-color: #ffffff
-  color: #a4a4a4
-  font-size: 14px
-
-.header-search-button:focus
-  outline: 0
-
-.header-search-button:hover
-  border: 1px solid #838383
-  color: #838383
-
-/*Header Right*/
-.header-right
-  display: flex
-  align-items: center
-
-/*CART*/
-.header-cart
-  position: relative
-
-.header-cart > a
-  color: #222222
-  font-size: 32px
-  padding-right: 26px
-
-.header-cart > a:hover
-  color: #a4a4a4
-
-.header-cart:hover .container-menu-cart
-  display: flex
-
-.cart-triangle
-  width: 7px
-  height: 7px
-  background-color: #fff
-  position: absolute
-  border-top: 1px solid #e8e8e8
-  border-left: 1px solid #e8e8e8
-  transform: rotate(45deg)
-  top: -5px
-  left: 119px
-
-.container-menu-cart
-  padding: 20px 15px
-  position: absolute
-  z-index: 1
-  display: none
-  flex-direction: column
-  border: 1px solid #e8e8e8
-  background-color: #fff
-  width: 262px
-  border-radius: 5px
-  top: 40px
-  left: -103px
-  align-items: center
-  box-sizing: border-box
-
-.cart-product
-  border-bottom: 1px solid #ededed
-  width: 100%
-  justify-content: space-between
-  display: flex
-  height: 120px
-  align-items: center
-
-.cart-product-center
-  padding-top: 36px
-  margin-left: 14px
-  width: 100%
-  height: 100%
-
-.cart-product-center h4
-  color: #222222
-  font-size: 12px
-  font-weight: 700
-  text-transform: uppercase
-  padding-bottom: 5px
-
-.cart-product-center > span
-  padding-top: 5px
-  display: block
-  color: #f16d7f
-  font-weight: 400
-  text-transform: uppercase
-  font-size: 12px
-
-.cart-product-right button
-  border: none
-  background: none
-  color: #c0c0c0
-  font-size: 16px
-  font-weight: 400
-
-.cart-product-right button:hover
-  cursor: pointer
-  color: #f16d7f
-
-.cart-product-right button:focus
-  outline: none
-
-.cart-but
-  padding-top: 32px
-  padding-bottom: 11px
-
-.cart-but:last-child
-  padding-top: 0
-  padding-bottom: 0
-
-.cart-but a
-  text-align: center
-  text-decoration: none
-  display: block
-  width: 225px
-  height: 50px
-  border: 1px solid #eaeaea
-  color: #4a4a4a
-  font-size: 14px
-  font-weight: 700
-  text-transform: uppercase
-  line-height: 50px
-
-.cart-but a:hover
-  border: 1px solid #f16d7f
-  color: #f16d7f
-
-.cart-info
-  padding-top: 20px
-  display: flex
-  justify-content: space-between
-  width: 100%
-
-.cart-info p, span
-  color: #222222
-  font-size: 16px
-  font-weight: 700
-  text-transform: uppercase
-
-/**/
-.header-myAccount
-  display: block
-  padding: 11px 0 11px 19px
-  background-color: #f16d7f
-  color: #ffffff
-  font-size: 15px
-  font-weight: 400
-  text-decoration: none
-
-.header-myAccount:hover
-  background-color: #a4a4a4
-
-.header-myAccount i
-  padding-left: 8px
-  padding-right: 12px
-  color: #ffffff
-  font-size: 14px
-
-
-/*NAV - menu*/
+//NAV - menu
 .menu
   display: flex
   list-style-type: none
   justify-content: center
-
-.menu > li > a
-  display: block
-  padding: 19px
-  color: #222222
-  font-size: 14px
-  font-weight: 700
-  line-height: 26px
-  text-align: left
-  text-decoration: none
-  text-transform: uppercase
-  position: relative
-
-.menu > li > a:hover
-  border-bottom: 3px solid #ef5b70
-
-.menu > li:hover .container-mega-menu
-  display: flex
+  > li
+    &:hover .container-mega-menu
+      display: flex
+    > a
+      display: block
+      padding: 19px
+      color: #222222
+      font-size: 14px
+      font-weight: 700
+      line-height: 26px
+      text-align: left
+      text-decoration: none
+      text-transform: uppercase
+      position: relative
+      &:hover
+        border-bottom: 3px solid #ef5b70
 
 .menu-active
   border-bottom: 3px solid #ef5b70
 
-
-/*NAV - meega-menu*/
+//NAV - mega menu
 .mega-menu-triangle
   width: 16px
   height: 16px
@@ -357,37 +59,31 @@ body
 
 .mega-menu
   margin-right: 46px
+  &:last-child
+    margin-right: 0
+  h4
+    width: 235px
+    border-bottom: 1px solid #e8e8e8
+    margin-bottom: 10px
+    color: #222222
+    font-size: 14px
+    font-weight: 400
+    line-height: 32px
+    text-transform: uppercase
+    letter-spacing: 0.35px
+  ul
+    list-style: none
+  a
+    text-decoration: none
+    color: #646464
+    font-size: 14px
+    font-weight: 400
+    line-height: 28px
+    letter-spacing: 0.35px
+    &:hover
+      color: #222222
 
-.mega-menu:last-child
-  margin-right: 0
-
-.mega-menu h4
-  width: 235px
-  border-bottom: 1px solid #e8e8e8
-  margin-bottom: 10px
-  color: #222222
-  font-size: 14px
-  font-weight: 400
-  line-height: 32px
-  text-transform: uppercase
-  letter-spacing: 0.35px
-
-.mega-menu ul
-  list-style: none
-
-.mega-menu a
-  text-decoration: none
-  color: #646464
-  font-size: 14px
-  font-weight: 400
-  line-height: 28px
-  letter-spacing: 0.35px
-
-.mega-menu a:hover
-  color: #222222
-
-
-/*Slider*/
+//Slider
 .slider
   background-color: #e8e8e8
   height: 614px
@@ -424,8 +120,7 @@ body
   font-weight: 900
   text-align: right
 
-
-/*Category*/
+//Category
 .category
   padding-top: 92px
 
@@ -474,8 +169,7 @@ body
   padding-left: 19px
   text-transform: uppercase
 
-
-/*Product Design*/
+//Product Design
 .container-product
   padding-top: 80px
 
@@ -606,8 +300,7 @@ body
   color: #ffffff
   font-size: 15px
 
-
-/*Container Offer*/
+//Container Offer
 .container-offer
   height: 529px
   padding-top: 63px
@@ -677,7 +370,7 @@ body
   line-height: 24px
   letter-spacing: 0.34px
 
-/*Container Slider-Subscribe*/
+//Container Slider-Subscribe
 .slider-sub
   background: url("../img/slider-subscribe.jpg") no-repeat center
 
@@ -732,7 +425,6 @@ body
   text-transform: uppercase
 
 .slider-sub-right h3
-  /* Style for "Subscribe" */
   color: #222224
   font-size: 14px
   font-weight: 400
@@ -782,89 +474,4 @@ body
   outline: none
   background-color: #9ae58f
 
-/*FOOTER*/
-.footer
-  padding-top: 100px
-
-.footer-info
-  display: flex
-  justify-content: space-between
-  padding-bottom: 100px
-
-.brand-info
-  width: 427px
-
-.brand-info p
-  padding-top: 29px
-  color: #898989
-  font-size: 14px
-  font-weight: 300
-  line-height: 24px
-  letter-spacing: 0.35px
-
-.footer-section-nav h2
-  color: #f16d7f
-  font-size: 18px
-  font-weight: 700
-  line-height: 26px
-  text-transform: uppercase
-  letter-spacing: 0.45px
-  padding-bottom: 45px
-
-.footer-nav
-  list-style-type: none
-
-.footer-nav a
-  text-decoration: none
-  color: #898989
-  font-size: 16px
-  font-weight: 400
-  letter-spacing: 0.4px
-  line-height: 42px
-
-.footer-nav a:hover
-  color: #222224
-
-.resource
-  background-color: #e6e6e6
-
-.footer-resource
-  height: 79px
-  display: flex
-  justify-content: space-between
-  align-items: center
-
-.copy-left p
-  color: #7a7a7a
-  font-size: 16px
-  font-weight: 400
-  letter-spacing: 0.4px
-
-.resource-nav
-  display: flex
-  list-style-type: none
-  align-items: center
-
-.resource-nav .not-use
-  background-color: #f0f0f0
-  color: #b2b2b2
-  font-size: 16px
-  font-weight: 400
-  letter-spacing: 0.4px
-
-.resource-right a
-  margin-left: 8px
-  text-align: center
-  width: 32px
-  background-color: #ffffff
-  display: block
-  text-decoration: none
-  color: #b2b2b2
-  font-size: 16px
-  font-weight: 400
-  letter-spacing: 0.4px
-  line-height: 32px
-
-.resource-right a:hover
-  background-color: #f16d7f
-  color: #fff
+@import "footer"
