@@ -3,86 +3,152 @@
 @import "mixins"
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900&display=swap')
 
+html,
+body
+  height: 100%
+
 body
   font-family: 'Lato', sans-serif
+
+.container-site
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.content-site
+  flex: 1
 
 .container
   width: $width-site
   margin: 0 auto
 
 @import "header"
+@import "nav"
 
-//NAV - menu
-.menu
+
+//Product Page
+//Breadcrumb
+.breadcrumb-background
+  background-color: #f8f3f4
+
+.breadcrumb-container
+  height: 148px
   display: flex
-  list-style-type: none
-  justify-content: center
-  > li
-    &:hover .container-mega-menu
-      display: flex
-    > a
-      display: block
-      padding: 19px
-      color: #222222
-      font-size: 14px
-      font-weight: 700
-      line-height: 26px
-      text-align: left
-      text-decoration: none
-      text-transform: uppercase
-      position: relative
-      &:hover
-        border-bottom: 3px solid #ef5b70
+  justify-content: space-between
+  align-items: center
 
-.menu-active
-  border-bottom: 3px solid #ef5b70
-
-//NAV - mega menu
-.mega-menu-triangle
-  width: 16px
-  height: 16px
-  background-color: #fff
-  position: absolute
-  border-top: 1px solid #e8e8e8
-  border-left: 1px solid #e8e8e8
-  transform: rotate(45deg)
-  top: -9px
-  left: 38px
-
-.container-mega-menu
-  position: absolute
-  top: 160px
-  display: none
-  padding: 20px 25px
-  border: 1px solid #e8e8e8
-  background-color: #fff
-
-.mega-menu
-  margin-right: 46px
-  &:last-child
-    margin-right: 0
-  h4
-    width: 235px
-    border-bottom: 1px solid #e8e8e8
-    margin-bottom: 10px
-    color: #222222
-    font-size: 14px
-    font-weight: 400
-    line-height: 32px
+.breadcrumb-name
+  h2
+    @include text(24px, 700, #f16d7f)
     text-transform: uppercase
-    letter-spacing: 0.35px
-  ul
-    list-style: none
-  a
-    text-decoration: none
-    color: #646464
-    font-size: 14px
-    font-weight: 400
-    line-height: 28px
-    letter-spacing: 0.35px
-    &:hover
-      color: #222222
 
+.breadcrumb
+  display: flex
+  list-style: none
+  .active
+    text-transform: uppercase
+    @include text(14px, 400, #f16d7f)
+
+.breadcrumb-item
+  font-size: 14px
+  &::after
+    margin: 0 3px
+    content: "/"
+    color: #636363
+  &:last-child::after
+    content: none
+  a
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 300
+    color: #636363
+    text-decoration: none
+    &:hover
+      color: #f16d7f
+
+//Product container - filter
+.product-container
+  display: flex
+  padding-top: 59px
+  padding-bottom: 110px
+
+.sidebar-details
+  padding-bottom: 18px
+  summary
+    -moz-user-select: none
+    -webkit-user-select: none
+    user-select: none
+    position: relative
+    padding: 0 11px
+    width: 243px
+    height: 37px
+    display: block
+    border-bottom: 1px solid #ebebeb
+    border-left: 5px solid #ef5b70
+    @include text(14px, 700, #ef5b70)
+    line-height: 37px
+    text-transform: uppercase
+    &::-webkit-details-marker
+      display: none
+    &:hover
+      border-bottom: 1px solid #ef5b70
+      cursor: pointer
+    &:focus
+      outline: none
+    &::after
+      position: absolute
+      top: -2px
+      right: 11px
+      content: "\01F892"
+      font-size: 27px
+      padding: 0
+      margin: 0
+.sidebar-details[open]
+  summary
+    &::after
+      top: -12px
+      right: 11px
+      content: "\01F891"
+      font-size: 26px
+      padding: 0
+      margin: 0
+
+.sidebar-details-last
+  padding-bottom: 0
+
+.sidebar-details-menu
+  padding: 6px 16px
+  list-style: none
+
+.sidebar-details-element
+  a
+    -moz-user-select: none
+    -webkit-user-select: none
+    user-select: none
+    display: block
+    line-height: 33px
+    text-decoration: none
+    border-bottom: 1px solid #fff
+    @include text(14px, 400, #6f6e6e)
+    &:hover
+      color: #ef5b70
+      border-bottom: 1px solid #ef5b70
+
+.product-container-right
+  padding-left: 50px
+
+.sort-product
+  width: 846px
+  height: 50px
+  background-color: #f3f3f3
+
+.product-container-box
+  padding: 45px 0
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+//Home Page
 //Slider
 .slider
   background-color: #e8e8e8
