@@ -67,6 +67,48 @@ body
       color: #f16d7f
 
 //Product container - filter
+.top-filter
+  display: flex
+  justify-content: space-between
+.filter-box
+  width: 262px
+  h4
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    padding-bottom: 20px
+
+.filter-box-left
+  ul
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+  li
+    padding-bottom: 8px
+  li::after
+    margin: 0 10px
+    content: "|"
+    color: #dfdfdf
+  li:last-child::after
+    content: none
+  a
+    text-decoration: none
+    @include text(14px, 400, #6f6e6e)
+
+
+//Filter Box Middle
+.filter-box-container
+  display: flex
+  flex-wrap: wrap
+.checkbox-box
+  width: 65px
+  padding-bottom: 8px
+  label
+    @include text(14px, 400, #6f6e6e)
+    text-transform: uppercase
+
+
 .product-container
   display: flex
   padding-top: 59px
@@ -138,6 +180,7 @@ body
   padding-left: 50px
 
 .sort-product
+  margin-top: 30px
   width: 846px
   height: 50px
   background-color: #f3f3f3
