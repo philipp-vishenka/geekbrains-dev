@@ -127,7 +127,7 @@ body
     display: block
     border-bottom: 1px solid #ebebeb
     border-left: 5px solid #ef5b70
-    @include text(14px, 700, #ef5b70)
+    @include text(14px, 700, #6f6e6e)
     line-height: 37px
     text-transform: uppercase
     &::-webkit-details-marker
@@ -139,14 +139,15 @@ body
       outline: none
     &::after
       position: absolute
-      top: -2px
+      top: 9px
       right: 11px
-      content: "\01F892"
+      content: "\1F893"
       font-size: 27px
       padding: 0
       margin: 0
 .sidebar-details[open]
   summary
+    color: #ef5b70
     &::after
       top: -12px
       right: 11px
@@ -191,7 +192,29 @@ body
   justify-content: space-between
   flex-wrap: wrap
 
+//pagination
+.pagination
+  display: flex
+  justify-content: space-between
 
+.pagination-box
+  width: 261px
+  height: 44px
+  border-radius: 3px
+  border: 1px solid #ebebeb
+
+.view-all
+  text-decoration: none
+  color: #6f6e6e
+  font-size: 16px
+  font-weight: bold
+  display: block
+  padding: 16px 45px
+  border-radius: 3px
+  border: 1px solid #6f6e6e
+  &:hover
+    color: #ef5b70
+    border: 1px solid #ef5b70
 
 //feature-box
 .feature-background

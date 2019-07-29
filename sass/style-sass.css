@@ -546,7 +546,7 @@ body {
   border-left: 5px solid #ef5b70;
   font-size: 14px;
   font-weight: 700;
-  color: #ef5b70;
+  color: #6f6e6e;
   line-height: 37px;
   text-transform: uppercase;
 }
@@ -562,14 +562,17 @@ body {
 }
 .sidebar-details summary::after {
   position: absolute;
-  top: -2px;
+  top: 9px;
   right: 11px;
-  content: "🢒";
+  content: "🢓";
   font-size: 27px;
   padding: 0;
   margin: 0;
 }
 
+.sidebar-details[open] summary {
+  color: #ef5b70;
+}
 .sidebar-details[open] summary::after {
   top: -12px;
   right: 11px;
@@ -621,6 +624,33 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-box {
+  width: 261px;
+  height: 44px;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+}
+
+.view-all {
+  text-decoration: none;
+  color: #6f6e6e;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  padding: 16px 45px;
+  border-radius: 3px;
+  border: 1px solid #6f6e6e;
+}
+.view-all:hover {
+  color: #ef5b70;
+  border: 1px solid #ef5b70;
 }
 
 .feature-background {
