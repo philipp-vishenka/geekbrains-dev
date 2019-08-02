@@ -635,4 +635,122 @@ body
   outline: none
   background-color: #9ae58f
 
+
+
+//single_page
+//Slider
+.single-page-slider
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 777px
+  background-color: #f7f7f7
+  &__button
+    position: absolute
+    width: 47px
+    height: 47px
+    background-color: #e1e1e1
+    border: none
+    font-size: 16px
+    font-weight: 400
+    color: white
+    &:focus
+      outline: none
+    &:hover
+      cursor: pointer
+      background: #d7d7d7
+    &_left
+      left: 0
+    &_right
+      right: 0
+
+//addToCart
+.addToCart
+  display: flex
+  flex-direction: column
+  align-items: center
+  border: 1px solid #eaeaea
+  background: #ffffff
+  position: relative
+  top: -70px
+  &__button
+    margin: 28px 0 122px 0
+    text-decoration: none
+    width: 537px
+    display: block
+    height: 55px
+    line-height: 55px
+    text-align: center
+    border: 1px solid #ef5b70
+    color: #ef5b70
+    font-size: 16px
+    font-weight: 700
+    i
+      padding-right: 10px
+    &:hover
+      background: #ef5b70
+      color: #ffffff
+
+.addToCart-info
+  width: 642px
+  text-align: center
+  border-bottom: 1px solid #eaeaea
+  >h2
+    @include text(14px, 700, #f16d7f)
+    text-transform: uppercase
+    padding-top: 73px
+  >h4
+    padding-top: 34px
+    @include text(18px, 400, #4d4d4d)
+    text-transform: uppercase
+  &__text
+    padding-top: 67px
+    @include text(14px, 300, #5e5e5e)
+  &__price
+    padding-bottom: 43px
+    @include text(24px, 700, #ef5b70)
+
+.addToCart-parameter
+  padding: 28px 0 37px 0
+  display: flex
+  justify-content: center
+  &__box
+    padding: 0 22px
+    p
+      @include text(14px, 700, #b9b9b9)
+      text-transform: uppercase
+      span
+        color: #2f2f2f
+
+
+.addToCart-choose
+  width: 537px
+  display: flex
+  justify-content: space-between
+  &__box
+    h4
+      color: #2f2f2f
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+      padding: 63px 0 10px 0
+    &__select
+      width: 144px
+      height: 35px
+      border: 1px solid #eaeaea
+      color: #bcbcbc
+      font-size: 13px
+      font-weight: 400
+      padding: 0 10px
+      box-sizing: border-box
+      &:hover
+        color: #2f2f2f
+        border: 1px solid #2f2f2f
+
+.productMayLike
+  @include text(24px, 400, #4d4d4d)
+  text-align: center
+  text-transform: uppercase
+
 @import "footer"

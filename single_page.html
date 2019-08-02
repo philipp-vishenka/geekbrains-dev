@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>single_page</title>
     <link rel="stylesheet" href="sass/style-sass.css">
     <link href="fontawesome/css/all.css" rel="stylesheet">
 </head>
@@ -109,7 +109,7 @@
         <nav class="nav">
             <div class="container">
                 <ul class="menu">
-                    <li><a class="menu-active" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="product.html">Man</a></li>
                     <li><a href="single_page.html">Women</a>
                         <div class="container-mega-menu">
@@ -164,225 +164,127 @@
                 </ul>
             </div>
         </nav>
+        <div class="breadcrumb-background">
+            <div class="container breadcrumb-container">
+                <div class="breadcrumb-name">
+                    <h2>New Arrivals</h2>
+                </div>
+                <nav class="breadcrumb-box">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Men</a></li>
+                        <li class="breadcrumb-item active">New Arrivals</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="single-page-slider">
+            <button class="single-page-slider__button single-page-slider__button_left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="single-page-slider__button single-page-slider__button_right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img src="img/single_page/slider.png" alt="slider">
+        </div>
+        <div class="container addToCart">
+            <div class="addToCart-info">
+                <h2>WOMEN COLLECTION</h2>
+                <h4>Moschino Cheap And Chic</h4>
+                <p class="addToCart-info__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
+                   collaborative architectures before cutting-edge services. Completely visualize parallel core competencies
+                   rather than exceptional portals.</p>
+                <div class="addToCart-parameter">
+                    <div class="addToCart-parameter__box">
+                        <p>MATERIAL: <span>COTTON</span></p>
+                    </div>
+                    <div class="addToCart-parameter__box">
+                        <p>DESIGNER: <span>BINBURHAN</span></p>
+                    </div>
+                </div>
+                <p class="addToCart-info__price"><span>$561</span></p>
+            </div>
+            <div class="addToCart-choose">
+                <div class="addToCart-choose__box">
+                    <h4>CHOOSE COLOR</h4>
+                    <select class="addToCart-choose__box__select" name="color">
+                        <option>Red</option>
+                        <option>Green</option>
+                        <option>Black</option>
+                    </select>
+                </div>
+                <div class="addToCart-choose__box">
+                    <h4>CHOOSE SIZE</h4>
+                    <select class="addToCart-choose__box__select" name="size">
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>XXX</option>
+                    </select>
+                </div>
+                <div class="addToCart-choose__box">
+                    <h4>QUANTITY</h4>
+                    <input class="addToCart-choose__box__select" type="number" min="1" value="1">
+                </div>
+            </div>
+            <a href="#" class="addToCart__button"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
+        </div>
+        <h2 class="productMayLike">you may like also</h2>
+        <div class="container product-container-box">
+            <div class="product">
+                <a class="product-link" href="#">
+                    <img src="img/single_page/product_1.jpg" alt="product-1">
+                    <p>Mango People T-shirt</p>
+                    <span>$52.00</span>
+                </a>
+                <div class="cart-center">
+                    <a class="cart-link" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-link" href="#">
+                    <img src="img/single_page/product_1.jpg" alt="product-1">
+                    <p>Mango People T-shirt</p>
+                    <span>$52.00</span>
+                </a>
+                <div class="cart-center">
+                    <a class="cart-link" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-link" href="#">
+                    <img src="img/single_page/product_3.jpg" alt="product-1">
+                    <p>Mango People T-shirt</p>
+                    <span>$52.00</span>
+                </a>
+                <div class="cart-center">
+                    <a class="cart-link" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-link" href="#">
+                    <img src="img/single_page/product_4.jpg" alt="product-1">
+                    <p>Mango People T-shirt</p>
+                    <span>$52.00</span>
+                </a>
+                <div class="cart-center">
+                    <a class="cart-link" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <div class="content-site">
-            <div class="slider">
-                <div class="container slider-container">
-                    <div class="slider-text">
-                        <h2>The brand</h2>
-                        <h3>Of luxerious <span>fashion</span></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="category">
-                <div class="container container-category">
-                    <div class="container-category-left">
-                        <a class="category-item" href="#">
-                            <img src="img/product-1.jpg" alt="category-1">
-                            <span class="category-item-name">
-                        <h2>Hot deal</h2>
-                        <h3>For men</h3>
-                    </span>
-                        </a>
-                        <a class="category-item" href="#">
-                            <img src="img/product-2.jpg" alt="category-2">
-                            <span class="category-item-name">
-                        <h2>LUXIROUS & trendy</h2>
-                        <h3>ACCESORIES</h3>
-                    </span>
-                        </a>
-                    </div>
-                    <div class="container-category-right">
-                        <a class="category-item" href="#">
-                            <img src="img/product-3.jpg" alt="category-2">
-                            <span class="category-item-name">
-                        <h2>30% offer</h2>
-                        <h3>Women</h3>
-                    </span>
-                        </a>
-                        <a class="category-item" href="#">
-                            <img src="img/product-4.jpg" alt="category-2">
-                            <span class="category-item-name">
-                        <h2>new arrivals</h2>
-                        <h3>FOR kids</h3>
-                    </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <section class="container">
-                <div class="container-product">
-                    <div class="header-container-product">
-                        <h2>Featured Items</h2>
-                        <p>Shop for items based on what we featured in this week</p>
-                    </div>
-                    <div class="main-container-product">
-                        <div class="product">
-                            <a class="product-link" href="#">
-                                <img src="img/featured-item-1.jpg" alt="product-1">
-                                <p>Mango People T-shirt</p>
-                                <span>$52.00</span>
-                            </a>
-                            <div class="cart-center">
-                                <a class="cart-link" href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <a class="product-link" href="#">
-                                <img src="img/featured-item-2.jpg" alt="product-1">
-                                <p>Mango People T-shirt</p>
-                                <span>$52.00</span>
-                            </a>
-                            <div class="cart-center">
-                                <a class="cart-link" href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <a class="product-link" href="#">
-                                <img src="img/featured-item-3.jpg" alt="product-1">
-                                <p>Mango People T-shirt</p>
-                                <span>$52.00</span>
-                            </a>
-                            <div class="cart-center">
-                                <a class="cart-link" href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <a class="product-link" href="#">
-                                <img src="img/featured-item-4.jpg" alt="product-1">
-                                <p>Mango People T-shirt</p>
-                                <span>$52.00</span>
-                            </a>
-                            <div class="cart-center">
-                                <a class="cart-link" href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <a class="product-link" href="#">
-                                <img src="img/featured-item-5.jpg" alt="product-1">
-                                <p>Mango People T-shirt</p>
-                                <span>$52.00</span>
-                            </a>
-                            <div class="cart-center">
-                                <a class="cart-link" href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <a class="product-link" href="#">
-                                <img src="img/featured-item-6.jpg" alt="product-1">
-                                <p>Mango People T-shirt</p>
-                                <span>$52.00</span>
-                            </a>
-                            <div class="cart-center">
-                                <a class="cart-link" href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <a class="product-link" href="#">
-                                <img src="img/featured-item-7.jpg" alt="product-1">
-                                <p>Mango People T-shirt</p>
-                                <span>$52.00</span>
-                            </a>
-                            <div class="cart-center">
-                                <a class="cart-link" href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <a class="product-link" href="#">
-                                <img src="img/featured-item-8.jpg" alt="product-1">
-                                <p>Mango People T-shirt</p>
-                                <span>$52.00</span>
-                            </a>
-                            <div class="cart-center">
-                                <a class="cart-link" href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bottom-featured-product">
-                        <a class="browse-featured-product" href="#">Browse All Product<i
-                                class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-            </section>
-            <section class="container">
-                <div class="container-offer">
-                    <div class="offer-left">
-                        <img src="img/img-offer.jpg" alt="offer">
-                        <div class="offer-name">
-                            <h2>30% <span>OFFER</span></h2>
-                            <h3>FOR WOMEN</h3>
-                        </div>
-                    </div>
-                    <div class="offer-right">
-                        <article class="article-offer">
-                            <div class="header-article">
-                                <div class="header-article-left">
-                                    <img src="img/free-delivery.png" alt="header-article">
-                                </div>
-                                <div class="header-article-right">
-                                    <h2>Free Delivery</h2>
-                                </div>
-                            </div>
-                            <div class="main-article">
-                                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                                   models.</p>
-                            </div>
-                        </article>
-                        <article class="article-offer">
-                            <div class="header-article">
-                                <div class="header-article-left">
-                                    <img src="img/sales-discounts.png" alt="header-article">
-                                </div>
-                                <div class="header-article-right">
-                                    <h2>Sales & discounts</h2>
-                                </div>
-                            </div>
-                            <div class="main-article">
-                                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                                   models.</p>
-                            </div>
-                        </article>
-                        <article class="article-offer">
-                            <div class="header-article">
-                                <div class="header-article-left">
-                                    <img src="img/assurance.png" alt="header-article">
-                                </div>
-                                <div class="header-article-right">
-                                    <h2>Quality assurance</h2>
-                                </div>
-                            </div>
-                            <div class="main-article">
-                                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                                   models.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
         </div>
 
         <div class="slider-sub">
@@ -391,7 +293,8 @@
                     <div class="slider-sub-left">
                         <img class="personal-img" src="img/slider-foto.png" alt="personal">
                         <p class="slider-personal-comment">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                                                           a pulvinar purus condimentum a. Aliquam condimentum mattis neque
+                                                           a pulvinar purus condimentum a. Aliquam condimentum mattis
+                                                           neque
                                                            sed pretium”</p>
                         <p class="slider-personal-name">Bin Burhan</p>
                         <p class="slider-personal-title">Dhaka, Bd</p>
