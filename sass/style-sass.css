@@ -1288,6 +1288,46 @@ body {
   text-transform: uppercase;
 }
 
+.checkout-container {
+  padding: 93px 0;
+}
+
+.checkout-box {
+  min-height: 74px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.checkout-box__name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  line-height: 74px;
+}
+.checkout-box__name span {
+  padding-right: 10px;
+}
+
+.checkout-content {
+  display: flex;
+}
+
+.checkout-section {
+  padding-left: 28px;
+  width: 570px;
+}
+.checkout-section > h2 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+.checkout-section > p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #b3b2b2;
+}
+
 .footer {
   padding-top: 100px;
 }

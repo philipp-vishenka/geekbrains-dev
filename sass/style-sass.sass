@@ -753,4 +753,30 @@ body
   text-align: center
   text-transform: uppercase
 
+
+//Checkout Page
+.checkout-container
+  padding: 93px 0
+.checkout-box
+  min-height: 74px
+  border-bottom: 1px solid #e8e8e8
+  &__name
+    @include text(13px, 700, #222222)
+    text-transform: uppercase
+    line-height: 74px
+    span
+      padding-right: 10px
+
+.checkout-content
+  display: flex
+.checkout-section
+  padding-left: 28px
+  width: $width-site/2
+  >h2
+    @include text(13px, 400, #222222)
+    text-transform: uppercase
+    padding-bottom: 8px
+  >p
+    @include text(13px, 400, #b3b2b2)
+
 @import "footer"
